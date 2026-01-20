@@ -1,0 +1,337 @@
+/* body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    background-color: rgba(128, 128, 128, 0.419);
+}
+
+header {
+    background-image: url("https://mblogthumb-phinf.pstatic.net/MjAyMjExMDVfNjIg/MDAxNjY3NjUzMzc3MzUw.ARY2HcB5ZsSGYbHFWVyfLzuKd9kmVbR9haXUICiJX34g.3TSCsxydtIYBjY3_jmUBf3DnvxrIDY_Hlp5XNksrxCog.JPEG.painkee0000/Joji_-_Die_For_You.jpg?type=w800");
+    background-position: top center;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+
+}
+
+p {
+    font-size: large;
+
+    padding: auto;
+    margin: 10px;
+    text-align: center;
+}
+
+
+h1 {
+    margin: 0;
+    text-align: center;
+    text-decoration: double;
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    width: 100%;
+    font-style: initial;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    margin: 0;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    width: 100%;
+    font-style: initial;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+
+img {
+    width: auto;
+    height: 300px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+nav {
+    background-color: #8b7d6b;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+
+
+
+h3,
+h4 {
+    background-color: #8b7d6b;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+table {
+  
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+    height: 300%;
+
+}
+
+
+
+
+footer {
+    background-color: gray;
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+    width: 100%;
+
+} */
+
+/* ---------- Global Styles ---------- */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #f0f0f0, #d9d9d9);
+    color: #333;
+    line-height: 1.6;
+    transition: background 0.5s ease;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ---------- Header ---------- */
+header {
+    background-image: url("https://mblogthumb-phinf.pstatic.net/MjAyMjExMDVfNjIg/MDAxNjY3NjUzMzc3MzUw.ARY2HcB5ZsSGYbHFWVyfLzuKd9kmVbR9haXUICiJX34g.3TSCsxydtIYBjY3_jmUBf3DnvxrIDY_Hlp5XNksrxCog.JPEG.painkee0000/Joji_-_Die_For_You.jpg?type=w800");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+
+    text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
+header h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+    background: #8b7d6b;
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: #fff;
+    color: #8b7d6b;
+    transform: scale(1.1);
+}
+
+/* ---------- Introduction Paragraph ---------- */
+#intro {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 900px;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.8);
+    transition: all 0.3s ease;
+}
+
+#intro:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ---------- Images ---------- */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* ---------- Headings ---------- */
+h3, h4 {
+    background-color: #8b7d6b;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Grande', sans-serif;
+    border-radius: 5px 5px 0 0;
+    margin-top: 30px;
+}
+
+/* ---------- Table ---------- */
+table {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    background: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #8b7d6b;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:hover {
+    background-color: #f3e8d0;
+    transform: scale(1.01);
+    transition: all 0.3s ease;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: #555;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+footer a {
+    color: #ffdd57;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* ---------- Buttons (Optional Interactive) ---------- */
+button {
+    background-color: #8b7d6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px auto;
+    display: block;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #726250;
+    transform: scale(1.05);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    table {
+        width: 95%;
+    }
+}
