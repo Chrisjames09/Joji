@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+</head>
+
+<body>
+    <div id="forms">
+        
+        <h2>Support Us</h2>
+        <form id="donationForm">
+            <label for="donationName">Name:</label>
+            <input type="text" id="donationName" name="donationName" required><br><br>
+
+            <label for="donationEmail">Email:</label>
+            <input type="email" id="donationEmail" name="donationEmail" required><br><br>
+
+            <label for="donationAmount">Donation Amount(SGD):</label>
+            <input type="number" id="donationAmount" name="donationAmount" min="1" required><br><br>
+
+            <label for="paymentMethod">Payment Method:</label>
+            <select name="methods" id="methods">
+                <option value="Paynow">Paynow</option>
+                <option value="Visa">Visa</option>
+                <option value="Apple Pay">Apple Pay</option>
+                <option value="Pay Lah!">Pay Lah!</option>
+            </select><br><br>
+
+            <label for="donationMessage">Message:</label>
+            <textarea id="donationMessage" name="donationMessage" rows="4"></textarea><br><br>
+
+            <button type="submit">Donate</button>
+        </form>
+    </div>
+
+    <style>
+        h2 {
+            background-color: #6c6b8bd4;
+            text-align: center;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        form {
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        label {
+            
+            margin-top: 10px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const donationForm = document.getElementById("donationForm");
+
+            donationForm.addEventListener("submit", function (event) {
+                
+
+                const name = document.getElementById("donationName").value;
+                const email = document.getElementById("donationEmail").value;
+                const amount = document.getElementById("donationAmount").value;
+                const message = document.getElementById("donationMessage").value;
+
+                document.write(`Thank you for your donation, ${name}!\n\nAmount: $${amount}\n\nMessage: ${message}`);
+
+                donationForm.reset();
+            });
+        });
+    </script>
+</body>
+
+</html>

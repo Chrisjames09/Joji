@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ballads 1</title>
+    <link rel="stylesheet" href="joji.css">
+    <style>
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px ;
+        }
+        
+
+        iframe {
+            border-radius: 12px;
+        }
+    </style>
+
+    <script>
+       document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll('img');
+
+    images.forEach(img => {
+        img.addEventListener('mouseover', function() {
+            img.style.transform = 'scale(1.1)';
+        });
+
+        img.addEventListener('mouseout', function() {
+            img.style.transform = 'scale(1)';
+        });
+    });
+});
+
+    </script>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="joji.html">HOME</a></li>
+            <li><a href="joji.html#discography">BIOGRAPHY</a></li>
+            <li><a href="discography.html">DISCOGRAPHY</a></li>
+            <li><a href="#">NEWS AND UPDATES</a></li>
+        </ul>
+    </nav>
+    <h1>Ballads 1</h1>
+    <img src="jojiballadas1.png" alt="Ballads 1 Album Cover">
+    <p><strong>"Ballads 1"</strong> is the debut studio album by Japanese singer-songwriter Joji. It serves as a
+        follow-up to In Tongues EP, his first project as Joji, and Pink Season, his only album released under the
+        now-retired alter-ego Pink Guy. It was released on 26 October 2018 through 88rising and 12Tone Music. It
+        features the singles "Yeah Right", "Slow Dancing In The Dark", "Can't Get Over You" and "Test Drive".</p>
+    <h2>The following track,<strong>"Yeah Right",</strong>is the lead single of the album.</h2>
+    
+    <!-- <div class="iframe-container"><video width="560" height="315" controls>
+        <source src="Joji - YEAH RIGHT.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video> </div>
+     -->
+    <div class="iframe-container"><iframe  width="560" height="315" src="https://www.youtube.com/embed/tG7wLK4aAOE?si=0dQDSLAwoqepVeFP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen></iframe> </div>
+    <h3>Stream Ballads 1 Here!</h3>
+    <iframe
+        src="https://open.spotify.com/embed/album/5mIImcsuqpiSXg8XvFr81I"
+        width="100%"
+        height="800"
+        frameborder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"></iframe>
+
+</body>
+
+</html>
